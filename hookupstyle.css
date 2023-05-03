@@ -1,0 +1,507 @@
+/* header seciton */
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background-image: linear-gradient(black 25%, white);
+}
+
+header {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    /* position:fixed; */
+}
+
+/* navigaiton properties */
+nav {
+    position: fixed;
+    top:0%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 24vh;
+    min-height: 66px;
+    max-height: 90px;
+    width: 100%;
+
+
+}
+section{
+    margin-top:100px;
+}
+nav:hover {
+    box-shadow: 0px 0px 20px 20px rgba(45, 206, 45, 0.4);
+    /* background-color: rgba(45, 206, 45, 0.4); */
+}
+
+/* hookup.com image properties */
+.hookup {
+    height: 26vh;
+    min-height: 66px;
+    max-height: 90px;
+    cursor: pointer;
+
+}
+
+.hookup:hover {
+    height: 26vh;
+    min-height: 66px;
+    max-height: 90px;
+    cursor: pointer;
+    border-bottom: 3px solid rgb(45, 206, 45);
+    ;
+    /* box-shadow: 5px 5px 5px 5px rgba(45, 206, 45, 0.4); */
+}
+
+/* navigation option properties */
+.navigation {
+    list-style: none;
+    min-width: 370px;
+    /* border: 3px solid black; */
+    background-color: black;
+}
+/* .navigation:hover{
+    border-bottom: 3px solid rgb(45, 206, 45);
+    height: 75%;
+    margin: 18px;
+} */
+
+.navigation li {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.navigation li:hover {
+    padding: 5px;
+    border-bottom: 3px solid rgb(45, 206, 45);
+    transition: border-bottom 0.9s;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+#searchbox {
+    border: none;
+    border-bottom: 2px solid rgb(45, 206, 45);
+    background-color: black;
+    color: white;
+    height: 42px;
+    padding-left: 10px;
+    /*276.467×41.8833*/
+    width: 18vw;
+    margin-right: 20px;
+    display: none;
+
+}
+
+#searchbox:focus {
+    outline: none;
+}
+
+#searchbox:hover {
+    box-shadow: 0px 0px 5px 5px rgba(45, 206, 45, 0.4);
+    border-radius: 20px;
+
+}
+
+/* search image properties  */
+#searchimg {
+    height: 20px;
+    width: 20px;
+    min-width: 20px;
+    /* padding:5px; */
+    border: 6px solid black;
+    cursor: pointer;
+    background-image: url("searchimg.png");
+    background-size: cover;
+    float: right;
+}
+
+#searchimg:hover {
+    height: 20px;
+    width: 20px;
+    background-image: url("searchimghover.png");
+    background-size: cover;
+    border: 6px solid rgb(45, 206, 45);
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 20px rgba(45, 206, 45, 0.4);
+    transition: box-shadow 0.5s;
+    /* display: inline; */
+}
+
+/* login and sign in button */
+.signlog {
+    margin-left: 10px;
+    margin-right: 10px;
+    min-width: 184px;
+    margin-bottom: 10px;
+
+
+}
+
+nav input[type="button"] {
+    width: 10vw;
+    height: 12vh;
+    min-width: 65px;
+    min-height: 34px;
+    max-width: 100px;
+    max-height: 40px;
+    border: 3px solid white;
+    background-color: white;
+    border-radius: 20px;
+}
+
+nav input[type="button"]:hover {
+    background-color: rgb(45, 206, 45);
+    border: 3px solid rgb(45, 206, 45);
+    color: white;
+    box-shadow: 0px 0px 5px 2px rgba(45, 206, 45, 0.4);
+    transition: background-color 0.5s, border 0.5s, box-shadow 1s;
+}
+
+/* navigation bar end here */
+
+/* services temlate */
+.servicestemp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.servicestempbox {
+    /* display: flex; */
+    flex-direction: column;
+    height: 35vh;
+    width: 30vw;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+    border: 2px outset red;
+    border: 0.2px solid black;
+    border-radius: 30px;
+    margin: 10px;
+    font-size: 30px;
+    min-width: 315.5px;
+    min-height: 309px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.servicestempbox:hover {
+    box-shadow: 15px 15px 20px rgba(45, 206, 45, 0.4);
+    transition: box-shadow 0.3s;
+}
+
+.stat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+/* edited by ankit arya sam */
+.servicestempbox:hover .stat {
+    /* don't need to use display:none here */
+    visibility: hidden;
+}
+
+.locationlogo {
+    height: 30px;
+    width: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: -8px;
+}
+
+.bestworker {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    margin-bottom: 10px;
+
+}
+
+.best {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 29vh;
+    width: 25vw;
+    min-width: 298.5px;
+    min-height: 207px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    margin-left: 5px;
+}
+.best:hover{
+    box-shadow: 0px 0px 10px 10px rgba(45, 206, 45, 0.4);;
+}
+.heading {
+    font-size: 25px;
+    color: white;
+    margin-left: 10px;
+}
+
+.workerimg {
+    height: 60%;
+    width: 60%;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+.shortdet {
+    display: grid;
+    margin: 5px;
+    padding: 5px;
+}
+
+.rating:hover {
+    background-color: rgb(45, 206, 45);
+}
+/* sorry massage diolog starts here */
+#sorrymsg, #signupresponse{
+    position: fixed;
+    z-index: 10;
+    display: none;
+    top: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;   
+}
+.sorrymsgbox, .signupresponsebox{
+    height: 36%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    background-color: white;
+    padding:10px;
+    border-radius: 10px;
+}
+.errors, .tickright{
+    height: 100px;
+    width: 155px;
+    align-self: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+.sorrymsgbox h1, .signupresponsebox h1{
+    color: #c7c71e;
+    margin-bottom: 15px;
+}
+.signupresponsebox h3{
+    margin-bottom: 10px;
+}
+#ok, #ok1{
+    align-self: end;
+    height: 20%;
+    width: 16%;
+    background-color: rgb(45, 206, 45);
+    border:none;
+    border-radius: 10px;
+}
+#ok:hover, #ok1:hover{
+    box-shadow: 0px 0px 5px 5px rgba(45, 206, 45, 0.4);
+}
+/* seciton part ends here */
+
+
+
+/* styling of dialog box of recive response{sign in succefully} starts here */
+.responserecv{
+    position: fixed;
+    display: none;
+    top: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;   
+}
+.responserecvbox{
+    background-color:white;
+    /* align-self: center; */
+    height: 30vh;
+    width: 40vh;
+}
+.responserecvbox img{
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
+}
+/* fotter section starts here */
+footer {
+    
+    margin-top: 450px;
+    margin-bottom: 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Pacifico', cursive;
+    
+}
+
+.logofooter {
+    margin-left: 20px;
+}
+
+.footercontactus {
+    margin-right: 20px;
+}
+
+.contactbox {
+    display: flex;
+}
+
+.contactbox a img {
+    height: 55px;
+    width: 60px;
+}
+
+
+/* login and sign part start here  */
+
+#login, #signin, #suggestusbox, #thanksmsg{
+    position: fixed;
+    top: 0%;
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+#login form, #signin form, #suggestusbox form{
+    border: 0.5 px solid white;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color:#f1f1f1;
+}
+
+.close{
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    left: 96%;
+    height: 20px;
+    width: 20px;
+    margin-top: 5px;
+}
+.loginlogo{
+    height: 251px;
+    width: 100%;
+    margin:10px 0px;
+    position: relative;
+    bottom: 57%;
+}
+#email, #password, #email1, #password1, #cnfpassword, #username, #suggestemail{
+    height: 5vh;
+    width: 33vw;
+    margin: 10px 20px;
+    border:none;
+    border-bottom: 3px solid skyblue;
+    background-color:#f1f1f1;
+}
+#email:hover, #password:hover, #password1:hover, #cnfpassword:hover, #username:hover, #suggestemail:hover, #comment:hover{
+    border-color: green;
+    transition: border-color 0.5s;
+}
+#email:focus, #password:focus, #email1:focus, #username:focus, #password1:focus, #cnfpassword:focus, #suggestemail:focus, #comment:focus{
+    outline:none;
+    border-color: green;
+}
+.forgetpassword{
+    margin: 5px 20px;
+    /* margin-right: 20px; */
+    position: relative;
+    right: -69%;
+}
+#loginsumbit, #signinsumbit, #suggetionsubmit{
+    height: 8vh;
+    width: 10vw;
+    margin:10px auto;
+    background-color: rgba(45, 206, 45);
+    border: 1px solid rgb(45, 206, 45);
+    border-radius: 10px;
+    color:white;
+    
+}
+#loginsumbit:hover, #singinsubmit:hover, #suggetionsubmit:hover{
+    box-shadow: 0px 0px 5px 5px rgba(45, 206, 45, 0.4);
+    transition: box-shadow 0.5s;
+}
+.loginoptions{
+    display: flex;
+    align-self: center;
+}
+.loginoptions img{
+    height: 30px;
+    width: 30px;
+    margin:1px 12px;
+}
+.notamember, .allreadyamember{
+    margin: 10px auto;
+    color:black;
+}
+
+#comment{
+    margin: 20px;
+    border: solid 2px skyblue;
+    background: #f1f1f1;
+}
+.thanksmsgbox{
+    background-color: #ffffff;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    height: 42vh;
+    padding: 10px;
+}
+.thanksmsgbox h1{
+    color: #c7c71e;
+    margin: 5px;
+    margin-bottom: 10px
+}
+.thanksmsgbox h3{
+    margin: 5px 0px;
+}
+#navToTop{
+    position: fixed;
+    bottom: 1%;
+    border-radius: 50%;
+    right: 1%;
+    background-color: rgba(0, 0, 0, 0);
+}
+#navToTop img{
+    height: 50px;
+    width: 50px;
+}
+#navToTop:hover{
+    box-shadow: 0px 0px 10px 10px rgba(45, 206, 45, 0.4);
+    transition: box-shadow 0.5s;
+}
+
+/*styling of dialog box of sign in and long in ends here */

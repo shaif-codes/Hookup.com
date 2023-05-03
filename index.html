@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- importing google text for hookup logo-->
+    <link rel="icon" href="logo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="hookupstyle.css">
+    <title>Hookup.com</title>
+</head>
+<!-- document.getElementsByClassName('navToTop').style.display='inline' -->
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="hookup" src="logo - Copy.jpg" alt="">
+            </div>
+            <ul class="navigation">
+                <li style="border-bottom:solid rgb(45, 206, 45);"><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">contact us</a></li>
+                <li><a href="#" title="Any bug or query?? feel free to suggest us!!" id="suggestionbtn" onclick="visiblity(this)">Suggest us</a></li>
+            </ul>
+            <div class="search">
+                <input type="search" name="search" id="searchbox" placeholder="search here what are you looking for!!">
+                <div id="searchimg" onclick='onoversearch(document.getElementById("searchbox"))'>
+                </div>
+            </div>
+            <div class="signlog">
+                <input type="button" value="Login" id="loginbtn" onclick='visiblity(this)'>
+                <input type="button" value="Sign in" id="signinbtn" onclick='visiblity(this)'>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <section>
+        <div class="servicestemp">
+            <div class="servicestempbox"
+                style="background-image:url('https://media.istockphoto.com/photos/carpenter-taking-measurement-picture-id481628382?k=20&m=481628382&s=612x612&w=0&h=1iY2fcA2o5uBOJKARhtVjmk_Wqaq6vQYyx9WnEaKBDk=');background-size:cover;border-radius: 20px;"
+                onclick="displaySorrymsg(this)">
+                <div class="stat" id="box">
+
+                    24M+ <br> Carpenter
+                </div>
+            </div>
+            <div class="servicestempbox"
+                style="background-image:url('https://www.washingtonpost.com/resizer/QJtOkVvaYcxvBs1t5udwcZS8B0o=/arc-anglerfish-washpost-prod-washpost/public/4Q2EYRR2XMI6TMIL6BNCFZ2YMU.jpg');background-size:cover"
+                onclick="displaySorrymsg(this)">
+                <div class="stat">
+                    20M+ <br> Plumber
+                </div>
+            </div>
+            <div class="servicestempbox"
+                style="background-image:url('https://www.auto.edu/wp-content/uploads/ATI-1-734x550.png');background-size:cover"
+                onclick="displaySorrymsg(this)">
+                <div class="stat">
+                    900K+ <br> Mechenics
+                </div>
+            </div>
+
+            <div class="servicestempbox"
+                style="background-image:url('https://thearchitectsdiary.com/wp-content/uploads/2019/06/professional-house-painter.jpg');background-size:cover"
+                onclick="displaySorrymsg(this)">
+                <div class="stat">
+                    1.5M+ <br> Painter
+                </div>
+            </div>
+            <div class="servicestempbox"
+                style="background-image:url('https://5.imimg.com/data5/AN/BH/KW/SELLER-6373950/all-types-construction-workers-500x500.png');background-size:cover"
+                onclick="displaySorrymsg(this)">
+                <div class="stat">
+                    500M+ <br> Construction workers
+                </div>
+            </div>
+            <div class="servicestempbox"
+                style="background-image:url('https://media.istockphoto.com/photos/cleaning-lady-with-a-bucket-and-cleaning-products-picture-id870219332?k=20&m=870219332&s=612x612&w=0&h=ZMFvkK0-VtGFja446L0-xy1OJSh6_1vCAgpmfmnzYTg=');background-size:cover"
+                onclick="displaySorrymsg(this)">
+                <div class="stat">
+                    1.75M+ <br> Cleaning workers
+                </div>
+            </div>
+
+            <div class="servicestempbox"
+                style="background-image:url('https://thumbs.dreamstime.com/b/male-caretaker-assisting-senior-man-men-to-get-up-bed-nursing-home-45595922.jpg');background-size:cover"
+                onclick="displaySorrymsg(this)">
+                <div class="stat">
+                    1M+ <br> Caretakers
+                </div>
+
+            </div>
+            <div class="servicestempbox"
+                style="background-image:url('https://concisesoftware.com/wp-content/uploads/nicole-wolf-CZ9AjMGKIFI-unsplash.jpg');background-size:cover"
+                onclick="displaySorrymsg(this)">
+                <div class="stat">
+                    2M+ <br> Frontend devlopers
+                </div>
+            </div>
+            <div class="servicestempbox"
+                style="background-image:url('https://d3tj4wnms16o5e.cloudfront.net/s3fs-public/2019-04/Backend-1.jpg');background-size:cover;"
+                onclick="displaySorrymsg(this)">
+                <div class="stat" id="box">
+                    explore more
+                </div>
+            </div>
+
+        </div>
+        <div class="bestworkers">
+            <div class="heading">
+                <img src="loacation.png" class="locationlogo" alt=""></span><span>Best Carpenter in your
+                    area</span><span>
+            </div>
+            <div class="bestworker" id="bestcarpenters">
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Sonu Sriniwas Sharma </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️ </span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rick Rehan </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Shaket Shikhawat </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Namrita Dubey </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+
+            </div>
+            <div class="heading">
+                <span><img src="loacation.png" class="locationlogo" alt=""></span><span>Best Plumber in your area</span>
+            </div>
+            <div class="bestworker" id="bestplumbers">
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Janki Simawati </span>
+                    <span class="rating">5 ❤️❤️❤️🤍🤍</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Shailesh Nigam </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Swati Nand </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Krishna Choudhri </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Santan Sharma </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+            </div>
+            <div class="heading">
+                <img src="loacation.png" class="locationlogo" alt=""></span><span>Best Mechenics in your
+                    area</span><span>
+            </div>
+            <div class="bestworker" id="bestmechanics">
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Shakil Khan </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Nilam Nalini </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Zakar Ahamad </span>
+                    <span class="rating">4 ❤️❤️❤️🤍🤍</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rishikant Lala </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Neha Sriwastwa </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+            </div>
+            <div class="heading">
+                <img src="loacation.png" class="locationlogo" alt=""></span><span>Best Painter in your area</span><span>
+            </div>
+            <div class="bestworker" id="bestpainters">
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rahul Shikawat</span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Safina Rehan </span>
+                    <span class="rating">5 ❤️❤️❤️❤️🤍</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rehana Luther </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Janki Lakhan </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Tushar Ahmand khan </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+            </div>
+            <div class="heading">
+                <img src="loacation.png" class="locationlogo" alt=""></span><span>Best Construciton worker in your
+                    area</span><span>
+            </div>
+            <div class="bestworker" id="bestconstructionworkers">
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rishikant Kumar sharma </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+            </div>
+            <div class="heading">
+                <img src="loacation.png" class="locationlogo" alt=""></span><span>Best Cleaning worker in your
+                    area</span><span>
+            </div>
+            <div class="bestworker" id="bestcleaningworkers">
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+            </div>
+            <div class="heading">
+                <img src="loacation.png" class="locationlogo" alt=""></span><span>Best Caretakers in your
+                    area</span><span>
+            </div>
+            <div class="bestworker" id="bestcaretakers">
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+            </div>
+            <div class="heading">
+                <img src="loacation.png" class="locationlogo" alt=""></span><span>Best Frontend Devlopers in your
+                    area</span><span>
+            </div>
+            <div class="bestworker" id="bestforntenddevlopers">
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">5 ❤️❤️❤️❤️❤️</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+                <div class="best" onclick="displaySorrymsg(this)">
+                    <img src="profilepic.jpg" alt="sorry!!Unable to load" class="workerimg">
+                    <span class="name">Rakesh Kumar Sharma </span>
+                    <span class="rating">4 ❤️❤️❤️❤️🤍</span>
+                </div>
+            </div>
+
+        </div>
+        <div id="sorrymsg">
+            <div class="sorrymsgbox">
+                <img src="https://3.bp.blogspot.com/-Gl5izeRuk1Y/V8ctqa-F_5I/AAAAAAAAACA/JE3Io9eaLCYkzPHXL182AldXqLz6dj4kwCLcB/s1600/sl_website-under-construction.jpeg"
+                    class="errors" alt="">
+                <p>
+                <h1>This Feature is comming soon!!</h1>
+                We are very sorry for your inconvenience. we are working hard on it for your better experience!!
+                <br><br> thank you for choosing us❤️❤️
+                </p>
+                <button id="ok" onclick="displaySorrymsg(this)">Ok</button>
+
+
+            </div>
+            <script>
+                var best = document.getElementsByClassName("best");
+                var sorrymsg = document.getElementById("sorrymsg");
+                var okbtn = document.getElementById("ok");
+
+                function displaySorrymsg(x) {
+                    count++;
+                    if (x == okbtn) {
+                        sorrymsg.style.display = "none";
+                    }
+                    else {
+                        sorrymsg.style.display = "flex";
+                    }
+                }
+            </script>
+        </div>
+    </section>
+
+    <!-- footer seciton starts here -->
+    <footer>
+        <div class="logofooter">
+            <h1>hookup.com</h1>
+            <div>easiest way to hire small Workers to heighest skilled worker</div>
+            <br><br><br>
+            <div>all right reserverd 2022 <br> &copy;Hookpu.com</div>
+        </div>
+        <div class="footerservices">
+            <h4>Our Services</h4>
+            <ul>
+                <li>Construciton Workers</li>
+                <li>Electricians</li>
+                <li>Carpenters</li>
+                <li>Plumber</li>
+                <li>Caretakers</li>
+                <li>Docters</li>
+                <li>Mechenics</li>
+                <li>Construciton Engineers</li>
+                <li>Intereior Designer</li>
+                <li>Costume Designers</li>
+                <li>Party/Wedding Organizers</li>
+                <li>Chef</li>
+                <li>Housekeeping Services</li>
+                <li>Frontend Devlopers</li>
+                <li>Bakcend Devlopers</li>
+                <li>Full stack devlopers</li>
+                <li>Android Devlopers</li>
+                <li>Ios Devlopers</li>
+                <li>Laundry Services</li>
+                <li>Nurses</li>
+            </ul>
+        </div>
+        <div class="aboutteam">
+            <h4>About Team</h4>
+            <ul>
+                <li>MD Saifullah(team leader)-12111338</li>
+            </ul>
+        </div>
+        <div class="footercontactus">
+            <h2>feel free to contact with us</h2>
+            <div class="contactbox">
+                <a href="mailto:emailisnotavilableyer@hookup.com"><img src="gmail.png" alt="Mail us"></a>
+                <a href="tel:+91xxxxxxx"><img src="telephone.png" alt=""></a>
+                <a href="https://www.instagram.com/"><img src="instagram.png"
+                        style="background-color: rgab(0, 0, 0, 0.1);" title="follow us on instagram"></a>
+                <a href="https://www.facebook.com/"><img src="facebook.png" alt="chat with us on facebook"></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- dialog boxes starts here -->
+    <div id="suggestusbox">
+        <form action="get">
+            <div class="bgclose" style="background-color:#f1f1f1;">
+                <img src="close.png" class="close" alt="close"
+                    onclick="visiblity(document.getElementById('suggestusbox'))">
+            </div>
+            <input type="email" name="email" id="suggestemail" placeholder="Enter your Email"><br>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="enter you discription of your suggestion/idea"></textarea>
+            <input type="button" value="Submit" id="suggetionsubmit" onclick="visiblity(this)">
+        </form>
+    </div>
+
+    <div id="thanksmsg">
+        <div class="thanksmsgbox">
+            <img src="check-mark-verified.gif" class="tickright" alt="">
+            <h1 align="center">Your response sended successfully!!</h1>
+            <h3>Thank you For your precious suggestion!! </h3> <!-- u_n=> user name  -->
+            <p>
+                Our team will lookout your suggestion. if we found it usefull and sutaible we will contact you on enterd email
+                <br><br>thank you for your love and sopport❤️❤️
+            </p>
+            <button id="ok1" onclick="visiblity(document.getElementById('thanksmsg'))">Ok</button>
+        </div>
+    </div>
+
+    <div id="login">
+        <form action="get">
+            <div class="bgclose" style="background-color:#f1f1f1;">
+                <img src="close.png" class="close" alt="close"
+                    onclick="visiblity(document.getElementById('login'))">
+            </div>
+            <img src="https://cms-assets.tutsplus.com/uploads/users/343/posts/23627/preview_image/tutsplus-icon.png"
+                class="loginlogo" alt="">
+            <input type="email" name="email" id="email" placeholder="Enter your Email"><br>
+            <input type="password" name="password" id="password" placeholder="Enter you password">
+            <a href="#" class="forgetpassword">forget password?</a>
+            <input type="button" value="Login" id="loginsumbit" onclick="visiblity(document.getElementById('login'))">
+            <div class="loginoptions">
+                <img src="https://pbs.twimg.com/profile_images/1455185376876826625/s1AjSxph_400x400.jpg" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1200px-2021_Facebook_icon.svg.png"
+                    alt="">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABDlBMVEX8+/clZ7MlZ7UkaLP8+/r/+vT7/PkmZ6/8//+fu8ZfhK4eX6DB2eYcWZ8rZa8lZbUoYJ3d7vb///MiYK8hZ771///7/PUkaaz/+PgjYLb2//ofWqgvYZlkibGgt9j5/e47bKXT5u8fVKWyyNz8+v//+uweX6Eeab3p+f//+PwbV5Iha6odV5j6/uvG4PCqw9KkuMiJqMEcV45OdpqkwNYvYI9Ab52Cnrw/ZpjG4OgjbJ/R6fk7Y6dPc7RUfLkbbbXc8e84WpdDX4htk7Ryjq9JcKN6mbORrL9Vg6lynMSMtdw/a5ZniZ5kibIqYr9JeZVbfq8hSXbh5uo2a4u/0OS0yNPP7PGewuXT4PIpW34x1XV+AAAKrUlEQVR4nO2dC3/SSALAk3lksoVkQshMeLRSCiEhpQ9akLq9vbpnre66V73d6nnf/4vcTEClTdCuBgj85q9Wf3SM83fez2iaQqFQKBQKhUKhUCgUCoVCoVAoFAqFQqFQKB6CEHY1DRcCPo2SkZcadzkytH6fH4mHGoa5dkQkDI5FZDjPz1BzMWLR8clPReC002Y8CDDOxe+TIWeV4f6gVxIkX9ZFrycjcHZ+GpmiyNRyMhSZwWSjccn2ikEYAt95esxQTqmYGLKJ5XnQtolAXzOQEECBPRgx7OZREJHpBpxNYpsCSIqCDgCtxicslzRERhCYncH0setOvilJNAC1x+08BGUTqEUXNhD/awURnAIJtfdYLs0FxubICqmgWIY+8KxnuRhyzPaqwIaFyaRTKDn0DoZmLoY8GkPiEwILpUjtn2H9PBdDTbuMRT2qz0p4URA1u052IwPVEPphw+O4WEVwhg1zMyyXCmtYycmwmGkoc+mWG+aWhrw8KKIhtHUoDUW368f8EHLLVgEFRTmkwKmIMdSPjvWLbKgrQ2X4aEMx8FjD/8GSDYWS6DYB/YpYlvWPX/6571jN6tWVGICszHbphkCOQokz/q38nJmNRlQeXgyINFxV07LsXApkatnxsNLgcpI20FzOnvxq61tlSHoXx8w9cruCfhe5LfPynUO2JZfqlNrOywrjAcatVotrZhdh3oiunZXNxS09DQG5uJQzz90uNlC3f+TW+jVci/ZKcDvSkIT0rMzSwc3Kv2i4FYYQ2BMzNQ+EsWmeDLYjDXUYVzIm1THn7M2KSuKy07D3gmUtG/DAfNXbDsPSyMDdVOguCrT2IJm32nRDMLjUMgwRwpjt2gBCuvGGMdNwxqMN1zVf25SQ5fdslp1Ld5kbZMypG27A9rbCkIy33VCPGc9anxSGW5JLadzOLIemSMM3W2EInY6ZnqjkrT5uXVpiZLyCzumy69LetahMU4a8H7RGzaXLrcLQo7tiZJEKXMNHbL+6FYYh7U3MDEO3cdJcfmO/CkMgHl/OWJ9sVHa3ZIxPYEjeVOT2MtFRk0MK2XIgjUc79qomFpds6BOo915WTI77fWnYkvNRGoquHX1bZqJoCEjp4piZWr/b7SLUr2GjUdnZnpkoSr0QwPpgWGFmX+65wZoZjcbVFe5JWbohpTq9pc74phyxBmPs2asLy/PC1Skuu6YhoiCCZK+bFT99vbPvxCKDhvr2zAhDgfw92Q1mEyCn82efbkk5vM9aVt/U+qEyVIayWkkWf+fRYfLxvVDySyrcve/L0eR0PRJMqyn5IPjNwr3s1oJS36cpfMHh3Jw31Q8Jtak3F6Rep1R8SEhIdSLDi/qXeHVatau2IHETIXy5C5jAr2yIXHYaeh65Av4DiNxp630ZPUERCnj0YbDDQ+oRYS63bCeb0uPx+Yub4avhZHJz/dIZWKJrFIZQPG+NhtALfcc6aD7Esux5wzB0Sk2r+TBcj9Z1Ih4qOge25eyctkWfyDQbyXkcFh2Pri8s24aiO7FGQ1+3X5c7ad53fptfmAFORpjO3e9ND4oeUBiS0ptXH1ijpSVHqlwxCONBizMWlW/GVp2uNQ2p/YeptR7gmpyNSnOC+i7jWuNeEPHTPXaA3Lehl96cRIy7ybQkqtXwdFlAjjY5q0wcsk5DEFZfmBg9QMMBH1mzEEnFuMuCwNW+hKghw0D9cuxfUUDiScTluBJ1hZJhyGM+YhjWFwMx+aHZ3ukRujZD6tf/3UgdO+Ko7z5pkpmhZJfJU1MPH1luXsFbZ1zOnlWWyEUfxIYDMQxdVxr69b0MQ+OxhiFtvr1k2sKTS0jjHCHWifWFa+aFNnx2EFrvnsscWluwOVSetkJYntZZOBgrtGH5oPc0EjXOV87XifpH40HARvFGpuHxwbjdPTJk5fI1Q9MQihNr8ww14+4/HYYDA30tbqIK4g1RpUYvaXhI6htmWP6DiUL2zX+bt7CGzJHlXZGMefQiG2p//mkurkbnHpc0Jey8KnpAG2b4dw5hY7c8uKX+xhnyxxz/rNVESOw2/hJDkc0zfMy/Xetrssls/GR59oYZzgTkSoeGRbvgirZxYar2jz40vU3LpQmGHHNwV442WrLnbS44TNhvsf2NK4czRbcVuLW+XNlJBkwLgtVcNrEz9pFtgKEcJNXcI5FDGybS3GBBA8ldo1PatPZwityqySrP3p+cnnTakbmoIIrKpnKWMcIouGFDbvFvPD95XUombpz46VAut/LM6GJzvGlpiIVhi5snfznVadRpqPfGp0wLeCMVX4S4ubd5rYXL5VUUejjLfdTz6tXBkAWBkTY0uDnMiEKhDQ1Re7DJGbj17GlgAkPPo/HIyNgNiAzXGGXsOy64IWad2NcpnV2VIid/AYBnFSNI1TeIB7xTSsWg2Iaifox2QQgJnM1RTAPD3oRlGrrPBhtm2MWNUdObLcJ8CQyufo7Shlqrq7Uz9soV21AM+mwvHWm4W3azDPHzTTNEqH1G000cgKWhkWkYWXqq31ZoQ26Oetk7yV5nXDkjDNmmlUPOrqsgNaglxANvonR72Oq6zNmw9pCzd6KhSBnqHtj9kDZ0u25jf9MMows7PZdNPO/Qak8XouZjgFnL2DzDOGNjEQmF4Ue+HYaXwjDVmSZUGN5th6FWHmSUQ596frOzHYZGuRem61JpeNDRtsRwIAzhp+1/M+QOlmZH1DT3/8JmGt4JQz9tqB8eKENlqAyVoTJUhspQGSpDZagMlaEyVIbKUBkqQ2WoDJWhMlSGylAZKkNlqAy3xfBRZ0g3w5D69R2OjeRli1+OMXMut4JOY53EH/SkIW89wL2zQPoVdYTQsPReHpydf2arcYSweZGKwbIN6z7dcYPknZmo+wU3+LzZdWrosMDF3YcIQ6in9rVBYei8dwN58nIuMD7C6zD0fLo325Itz7x8gnPzyexGusQQ7jIRyH0IvxvoNGNvIgDOe8OVuzHmAmtHqMZerj6XHtJ3Hy7baS5/v2foZIVpt/9rEZAyBMAGvSepsB/bHz9++GXlhvqhVx1bA4l18JmmFZ+VZpudprnU/nVgxc2DB8QWzTg0KQ31wVkcx4PBXODmWXMwrqcPzSz7bpNDz/O96Sv1CJQ/5BfgiQpk3pBSm4ZUfg/Cz6EgsT3vyk/FWRjS0IaAArn/+1Ng6MFbWsrI0uoGHmWoDNePMnw8hX3vGsjLsKDvzsvVsJBveMzR0CjHi6/BWR95puFxIQ11W/TTKygXw+Rdsit5KcffIUnDSBr+4BseOe9G/4M0uZG1SAD/0Ku/zeN9wBx32bm8XBamz1atE0B8r3qThyHGffNVLwyLllGBTrLvTP8Oakie95xebFkcIAClc/bjL8oVGDWXnQ50UpwkTCp2MYw8K+cjaMj3/u05thcCkrBuQXkfvMQaZhwa/l5w9NbyxPhdB9D39eS6QPkj+TL7872PFn8nj8BE3plJ4sniG/u+AxTdnPkAhEITpO9lXTG3t57eOzuN0COumno0GLNnr2PLrlZt8Wvd2KXxjeyvLb7P7jsMA26yy9Fkb6cAXA9P5Ksl8yuEkgbv92stbhYEZnA59f93rgz7JgZCs9d0aHjt5OilUCgUCoVCoVAoFAqFQqFQKBQKhUKhUCgUW8T/ARg4UF6Id5PpAAAAAElFTkSuQmCC"
+                    alt="">
+            </div>
+
+            <div class="notamember">Not a member? <a href="#" id="signinlink" onclick="visiblity(this)">Sign in</a></div>
+        </form>
+    </div>
+    <div id="signin">
+        <form action="get">
+            <div class="bgclose" style="background-color:#f1f1f1;">
+                <img src="close.png" class="close" alt="close"
+                    onclick="visiblity(document.getElementById('signin'))">
+            </div>
+            <img src="https://cms-assets.tutsplus.com/uploads/users/343/posts/23627/preview_image/tutsplus-icon.png"
+                class="loginlogo" alt="">
+            <input type="text" name="username" id="username" placeholder="enter your username">
+            <input type="email" name="email" id="email1" placeholder="Enter your email"><br>
+            <input type="password" name="password" id="password1" placeholder="Enter you password">
+            <input type="password" name="confirmpassword" id="cnfpassword" placeholder="Re-enter your password">
+            <input type="button" value="Sign in" id="signinsumbit" onclick="displaysignupresponse(this)">
+            <div class="loginoptions">
+                <img src="https://pbs.twimg.com/profile_images/1455185376876826625/s1AjSxph_400x400.jpg" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/1200px-2021_Facebook_icon.svg.png"
+                    alt="">
+                <img src="data:image/png;base64,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"
+                    alt="">
+            </div>
+
+            <div class="allreadyamember">Allready a member? <a href="#" id="loginlink" onclick="visiblity(this)">Log in</a></div>
+        </form>
+    </div>
+    <div id="signupresponse">
+        <div class="signupresponsebox">
+            <img src="check-mark-verified.gif" class="tickright" alt="">
+            <h1 align="center">Sign in successfully!!</h1>
+            <h3>Welecome <span id="u_n"></span>!! </h3> <!-- u_n=> user name  -->
+            <p>
+                hello!!<span id="u_n1"></span>, we are very happy to announce to you that you are part of our family
+                now. Thanks for your love and support❤️❤️
+            </p>
+            <button id="ok1" onclick="displaysignupresponse(this)">Ok</button>
+
+
+        </div>
+        <script>
+            var count = 0;
+            function onoversearch(x) {
+                count++;
+                if (count % 2 == 1) {
+                    x.style.display = "inline";
+                    x.style.transition = "all 1s";
+
+                }
+                else {
+                    x.style.display = "none";
+                }
+            }
+
+            // this code is for login dioalog box
+
+            var count = 0;
+            function visiblity(x) {
+                var loginlink = document.getElementById("loginlink");
+                var signinlink = document.getElementById("signinlink");
+                var login = document.getElementById("login");
+                var signin = document.getElementById("signin");
+                var loginbtn = document.getElementById("loginbtn");
+                var signinbtn = document.getElementById("signinbtn");
+                var suggestionbtn = document.getElementById("suggestionbtn");
+                var suggestusbox = document.getElementById("suggestusbox");
+                var suggetionsubmit = document.getElementById("suggetionsubmit");
+                if (x == loginlink) {
+                    signin.style.display = "none";
+                    login.style.display = "flex";
+                }
+                else if(x == signinlink){
+                    login.style.display = "none";
+                    signin.style.display = "flex";
+                }
+                else if(x == loginbtn){
+                    login.style.display="flex";
+                }
+                else if(x == signinbtn){
+                    signin.style.display="flex";
+                }
+                else if(x == suggestionbtn){
+                    suggestusbox.style.display="flex";
+                }
+                else if(x == suggetionsubmit){
+                    suggestusbox.style.display="none";
+                    thanksmsg.style.display="flex";
+                }
+                else{
+                    x.style.display = "none";
+                }
+                    // count++;
+                    // if (count % 2 == 1) {
+                    //     x.style.display = "flex";;
+                    // }
+                    // else {
+                    //     x.style.display = "none";
+                    // }
+                }
+            
+            function displaysignupresponse(x) {
+                var u_n = document.getElementById("u_n");
+                var u_n1 = document.getElementById("u_n1");
+                var username = document.getElementById("username");
+                var signinsumbit = document.getElementById("signinsumbit");
+                var signin = document.getElementById("signin");
+                var email1 = document.getElementById("email1");
+                var password1 = document.getElementById("password1");
+                var password2 = document.getElementById("cnfpassword");
+                u_n.innerHTML = username.value;
+                u_n1.innerHTML = username.value;
+
+                if (x == signinsumbit && username.value && email1.value && password1.value && password2.value && password1.value == password2.value) {
+                    signin.style.display = "none";
+                    signupresponse.style.display = "flex";
+
+                }
+                else if (x != signinsumbit) {
+                    signupresponse.style.display = "none";
+                }
+                else {
+                    alert("please fill required field and please cheak that password and confirm password is same or not.");
+                }
+            }
+        </script>
+    </div>
+    <a href="#" id="navToTop"><img src="https://cdn0.iconfinder.com/data/icons/flat-round-arrow-arrow-head/512/Green_Arrow_Top-512.png" alt="navigation to top" title="go to up"></a>
+</body>
+
+</html>
